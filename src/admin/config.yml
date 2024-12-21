@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "public/images/cms-uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/images"
+collections:
+  - name: "projects"
+  - label: "Projects"
+  - folder: "src/projects"
+  - create: "true"
+  - slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  - fields:
+    - { label: "Title of the project", name: "title", widget: "string", default: "Enter a title for your project" }
+    - { label: "Project Summary", name: "summary", widget: "text", default: "Type project summary" }
+    - { label: "Image", name: "image", widget: "image", default: "Browse and select an image" }
+    - { label: "Alt text for image", name: "imagealt", widget: "string", default: "Enter alt text for the project image" }
+    - { label: "Project Summary", name: "summary", widget: "text", default: "Type project summary" }
+    - { label: "Main Text", name: "body", widget: "text", default: "Project details" }
+    - { label: "Tech Stack"
+      name: "tech"
+      widget: "list"
+      default: ["Next.js", "Firebase", "Tailwind CSS"]
+      field:
+        label: "Technology"
+        name: "technology"
+        widget: "string"
+      required: true }
+    - { label: "Tags"
+      name: "tags"
+      widget: "select"
+      options:
+        - "projects"
+        - "portfolio"
+        - "tutorials"
+        - "opensource"
+      default: "projects"
+      multiple: true }
