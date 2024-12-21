@@ -5,11 +5,11 @@ media_folder: "public/images/cms-uploads" # Media files will be stored in the re
 public_folder: "/images"
 collections:
   - name: "projects"
-  - label: "Projects"
-  - folder: "src/projects"
-  - create: "true"
-  - slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-  - fields:
+    label: "Projects"
+    folder: "src/projects"
+    create: "true"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
     - { label: "Title of the project", name: "title", widget: "string", default: "Enter a title for your project" }
     - { label: "Project Summary", name: "summary", widget: "text", default: "Type project summary" }
     - { label: "Image", name: "image", widget: "image", default: "Browse and select an image" }
