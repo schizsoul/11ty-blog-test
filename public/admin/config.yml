@@ -7,14 +7,13 @@ collections:
   - name: "projects"
     label: "Projects"
     folder: "src/projects"
-    create: "true"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
     - { label: "Title of the project", name: "title", widget: "string", default: "Enter a title for your project" }
     - { label: "Project Summary", name: "summary", widget: "text", default: "Type project summary" }
     - { label: "Image", name: "image", widget: "image", default: "Browse and select an image" }
     - { label: "Alt text for image", name: "imagealt", widget: "string", default: "Enter alt text for the project image" }
-    - { label: "Project Summary", name: "summary", widget: "text", default: "Type project summary" }
     - { label: "Main Text", name: "body", widget: "text", default: "Project details" }
     # - { label: "Tech Stack"
     #   name: "tech"
