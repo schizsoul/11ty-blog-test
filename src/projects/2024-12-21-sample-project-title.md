@@ -1,0 +1,7 @@
+---
+title: Sample Project Title
+summary: "This is a project summary for hell. "
+image: /images/im-confused-v0-8le845jxc2zd1.jpg
+imagealt: A relevant alt text
+---
+Project details Project detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject detailsProject details
