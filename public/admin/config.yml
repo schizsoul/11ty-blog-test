@@ -14,7 +14,7 @@ collections:
     - { label: "Project Summary", name: "summary", widget: "text", default: "Type project summary" }
     - { label: "Image", name: "image", widget: "image", default: "Browse and select an image" }
     - { label: "Alt text for image", name: "imagealt", widget: "string", default: "Enter alt text for the project image" }
-    - { label: "Main Text", name: "body", widget: "text", default: "Project details" }
+    - { label: "Main Text", name: "body", widget: "markdown", default: "Project details" }
     # - { label: "Tech Stack"
     #   name: "tech"
     #   widget: "list"
