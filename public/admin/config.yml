@@ -24,13 +24,13 @@ collections:
     #     name: "technology"
     #     widget: "string"
     #   required: true }
-    # - { label: "Tags"
-    #   name: "tags"
-    #   widget: "select"
-    #   options:
-    #     - "projects"
-    #     - "portfolio"
-    #     - "tutorials"
-    #     - "opensource"
-    #   default: "projects"
-    #   multiple: true }
+    - { label: "Tags"
+      name: "tags"
+      widget: "select"
+      options:
+        - "projects"
+        - "portfolio"
+        - "tutorials"
+        - "opensource"
+      default: "projects"
+      multiple: true }

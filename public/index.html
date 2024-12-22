@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <title>Eleventy Portfolio</title>
 </head>
@@ -27,7 +28,7 @@
         <a class="header__link" href="/about-fcc">About</a>
       </li>
       <li>
-        <a class="header__link" href="/#">Projects</a>
+        <a class="header__link" href="/projects">Projects</a>
       </li>
       <li>
         <a class="header__link" href="/contact-fcc">Contact</a>
@@ -158,6 +159,32 @@
     </div>
   </article>
       
+        <article class="project-card">
+    <div class="project-card__image-wrapper">
+      <img class="project__image" src="/images/im-confused-v0-8le845jxc2zd1.jpg" alt="">
+    </div>
+    <div class="project-card__body">
+      <div class="project-card__tags">
+        
+          <span class="project-card__tag">Next.js</span>
+        
+          <span class="project-card__tag">Firebase</span>
+        
+          <span class="project-card__tag">Tailwind CSS</span>
+        
+      </div>
+      <h3 class="project-card__title">
+        <a href="/projects/2024-12-21-sample-project-title/">Sample Project Title</a>
+      </h3>
+      <p class="project-card__summary">This is a project summary for hell. </p>
+      <a class="project-card__link" href="/projects/2024-12-21-sample-project-title/">Read project case study 
+        <svg xmlns="http://www.w3.org/2000/svg" class="project-card__link-icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </article>
+      
     </div>
   </section>
         </main>
@@ -165,5 +192,17 @@
       <footer class="footer">
     <p>&copy; Marie Jackson 2022</p>
 </footer>
+
+      <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
 </body>
 </html>

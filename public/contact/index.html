@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <title>Contact</title>
 </head>
@@ -27,7 +28,7 @@
         <a class="header__link" href="/about-fcc">About</a>
       </li>
       <li>
-        <a class="header__link" href="/#">Projects</a>
+        <a class="header__link" href="/projects">Projects</a>
       </li>
       <li>
         <a class="header__link" href="/contact-fcc">Contact</a>
@@ -59,5 +60,17 @@
       <footer class="footer">
     <p>&copy; Marie Jackson 2022</p>
 </footer>
+
+      <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
 </body>
 </html>
